@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,16 @@
 		6AD90F6D1CA3332D00CD64D1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AD90F6B1CA3332D00CD64D1 /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		6AD90F8B1CA333A100CD64D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6AD90F871CA333A100CD64D1 /* Steno.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6AD90F7E1CA333A100CD64D1;
+			remoteInfo = Steno;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		6AD90F601CA3332D00CD64D1 /* Maschinensteno.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Maschinensteno.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AD90F631CA3332D00CD64D1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -21,6 +31,8 @@
 		6AD90F691CA3332D00CD64D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6AD90F6C1CA3332D00CD64D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		6AD90F6E1CA3332D00CD64D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AD90F871CA333A100CD64D1 /* Steno.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Steno.xcodeproj; path = Steno/Steno.xcodeproj; sourceTree = "<group>"; };
+		6AD90F8D1CA3343300CD64D1 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/MainMenu.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +49,7 @@
 		6AD90F571CA3332D00CD64D1 = {
 			isa = PBXGroup;
 			children = (
+				6AD90F741CA3334600CD64D1 /* Keyboard */,
 				6AD90F621CA3332D00CD64D1 /* Maschinensteno */,
 				6AD90F611CA3332D00CD64D1 /* Products */,
 			);
@@ -69,6 +82,22 @@
 				6AD90F671CA3332D00CD64D1 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6AD90F741CA3334600CD64D1 /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				6AD90F871CA333A100CD64D1 /* Steno.xcodeproj */,
+			);
+			name = Keyboard;
+			sourceTree = "<group>";
+		};
+		6AD90F881CA333A100CD64D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6AD90F8C1CA333A100CD64D1 /* Steno.bundle */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,7 +135,7 @@
 				};
 			};
 			buildConfigurationList = 6AD90F5B1CA3332D00CD64D1 /* Build configuration list for PBXProject "Maschinensteno" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -116,12 +145,28 @@
 			mainGroup = 6AD90F571CA3332D00CD64D1;
 			productRefGroup = 6AD90F611CA3332D00CD64D1 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6AD90F881CA333A100CD64D1 /* Products */;
+					ProjectRef = 6AD90F871CA333A100CD64D1 /* Steno.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				6AD90F5F1CA3332D00CD64D1 /* Maschinensteno */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		6AD90F8C1CA333A100CD64D1 /* Steno.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = Steno.bundle;
+			remoteRef = 6AD90F8B1CA333A100CD64D1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		6AD90F5E1CA3332D00CD64D1 /* Resources */ = {
@@ -152,6 +197,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				6AD90F6C1CA3332D00CD64D1 /* Base */,
+				6AD90F8D1CA3343300CD64D1 /* de */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
