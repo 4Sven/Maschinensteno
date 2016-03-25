@@ -11,6 +11,7 @@
 		6AD90F681CA3332D00CD64D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD90F671CA3332D00CD64D1 /* main.m */; };
 		6AD90F6A1CA3332D00CD64D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AD90F691CA3332D00CD64D1 /* Assets.xcassets */; };
 		6AD90F6D1CA3332D00CD64D1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AD90F6B1CA3332D00CD64D1 /* MainMenu.xib */; };
+		6AD90FF51CA5CD0600CD64D1 /* Stenokeyboards.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6AD90FF41CA5CD0600CD64D1 /* Stenokeyboards.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		6AD90F6C1CA3332D00CD64D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		6AD90F6E1CA3332D00CD64D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6AD90F8D1CA3343300CD64D1 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		6AD90FF41CA5CD0600CD64D1 /* Stenokeyboards.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Stenokeyboards.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		6AD90F621CA3332D00CD64D1 /* Maschinensteno */ = {
 			isa = PBXGroup;
 			children = (
+				6AD90FF31CA5CCCA00CD64D1 /* Resources */,
 				6AD90F631CA3332D00CD64D1 /* AppDelegate.h */,
 				6AD90F641CA3332D00CD64D1 /* AppDelegate.m */,
 				6AD90F691CA3332D00CD64D1 /* Assets.xcassets */,
@@ -70,6 +73,14 @@
 				6AD90F671CA3332D00CD64D1 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6AD90FF31CA5CCCA00CD64D1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6AD90FF41CA5CD0600CD64D1 /* Stenokeyboards.bundle */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AD90F6A1CA3332D00CD64D1 /* Assets.xcassets in Resources */,
+				6AD90FF51CA5CD0600CD64D1 /* Stenokeyboards.bundle in Resources */,
 				6AD90F6D1CA3332D00CD64D1 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
