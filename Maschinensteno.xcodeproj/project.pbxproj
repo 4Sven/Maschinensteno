@@ -10,8 +10,9 @@
 		6AD90F651CA3332D00CD64D1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD90F641CA3332D00CD64D1 /* AppDelegate.m */; };
 		6AD90F681CA3332D00CD64D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD90F671CA3332D00CD64D1 /* main.m */; };
 		6AD90F6A1CA3332D00CD64D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AD90F691CA3332D00CD64D1 /* Assets.xcassets */; };
-		6AD90F6D1CA3332D00CD64D1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AD90F6B1CA3332D00CD64D1 /* MainMenu.xib */; };
 		6AD90FF51CA5CD0600CD64D1 /* Stenokeyboards.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6AD90FF41CA5CD0600CD64D1 /* Stenokeyboards.bundle */; };
+		6AD90FF81CA5D4B600CD64D1 /* StenoInputController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD90FF71CA5D4B600CD64D1 /* StenoInputController.m */; };
+		6AD90FFF1CA5E58900CD64D1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AD90FFE1CA5E58900CD64D1 /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +21,11 @@
 		6AD90F641CA3332D00CD64D1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6AD90F671CA3332D00CD64D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6AD90F691CA3332D00CD64D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6AD90F6C1CA3332D00CD64D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		6AD90F6E1CA3332D00CD64D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6AD90F8D1CA3343300CD64D1 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		6AD90FF41CA5CD0600CD64D1 /* Stenokeyboards.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Stenokeyboards.bundle; sourceTree = "<group>"; };
+		6AD90FF61CA5D42300CD64D1 /* StenoInputController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StenoInputController.h; sourceTree = "<group>"; };
+		6AD90FF71CA5D4B600CD64D1 /* StenoInputController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StenoInputController.m; sourceTree = "<group>"; };
+		6AD90FFE1CA5E58900CD64D1 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +59,14 @@
 			isa = PBXGroup;
 			children = (
 				6AD90FF31CA5CCCA00CD64D1 /* Resources */,
-				6AD90F631CA3332D00CD64D1 /* AppDelegate.h */,
-				6AD90F641CA3332D00CD64D1 /* AppDelegate.m */,
 				6AD90F691CA3332D00CD64D1 /* Assets.xcassets */,
-				6AD90F6B1CA3332D00CD64D1 /* MainMenu.xib */,
 				6AD90F6E1CA3332D00CD64D1 /* Info.plist */,
 				6AD90F661CA3332D00CD64D1 /* Supporting Files */,
+				6AD90FF61CA5D42300CD64D1 /* StenoInputController.h */,
+				6AD90FF71CA5D4B600CD64D1 /* StenoInputController.m */,
+				6AD90F631CA3332D00CD64D1 /* AppDelegate.h */,
+				6AD90F641CA3332D00CD64D1 /* AppDelegate.m */,
+				6AD90FFE1CA5E58900CD64D1 /* MainMenu.xib */,
 			);
 			path = Maschinensteno;
 			sourceTree = "<group>";
@@ -142,7 +146,7 @@
 			files = (
 				6AD90F6A1CA3332D00CD64D1 /* Assets.xcassets in Resources */,
 				6AD90FF51CA5CD0600CD64D1 /* Stenokeyboards.bundle in Resources */,
-				6AD90F6D1CA3332D00CD64D1 /* MainMenu.xib in Resources */,
+				6AD90FFF1CA5E58900CD64D1 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,22 +159,11 @@
 			files = (
 				6AD90F681CA3332D00CD64D1 /* main.m in Sources */,
 				6AD90F651CA3332D00CD64D1 /* AppDelegate.m in Sources */,
+				6AD90FF81CA5D4B600CD64D1 /* StenoInputController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		6AD90F6B1CA3332D00CD64D1 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6AD90F6C1CA3332D00CD64D1 /* Base */,
-				6AD90F8D1CA3343300CD64D1 /* de */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		6AD90F6F1CA3332D00CD64D1 /* Debug */ = {
@@ -261,7 +254,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Maschinensteno/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.sven.Maschinensteno;
+				PRODUCT_BUNDLE_IDENTIFIER = org.sven.inputmethod.steno;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -273,7 +266,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Maschinensteno/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.sven.Maschinensteno;
+				PRODUCT_BUNDLE_IDENTIFIER = org.sven.inputmethod.steno;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
