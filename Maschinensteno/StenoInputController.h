@@ -19,5 +19,6 @@
 }
 
 -(BOOL)handleEvent:(NSEvent *)event client:(id)sender;
+-(NSUInteger)recognizedEvents:(id)sender;
 
 @end

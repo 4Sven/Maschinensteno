@@ -11,11 +11,18 @@
 
 @implementation StenoInputController
 
+-(NSUInteger)recognizedEvents:(id)sender
+{
+    NSLog(@"recognizedEvents");
+    return NSKeyDownMask| NSKeyUpMask;
+}
+
 -(BOOL)handleEvent:(NSEvent *)event client:(id)sender
 {
-    BOOL inputHandled = YES;
-    NSString* keyevent = @"testevent";
-
+    BOOL inputHandled = NO;
+    NSString* keyevent = @"testevent ";
+    
+    
     if (!event.ARepeat) {
         switch (event.type) {
             case NSKeyUp:
